@@ -2,14 +2,14 @@
 
 ## Method Parameter
 
-### With
+### For
 
-Parameter is ready.
+Parameter as predicate.
 
-Parameter is used as-is in the return value. "With" is used in a method signature to express a parameter that is ready to be combined with other assumed/implicit information to yield the result.
+"For" is used in a method signature to express a predicate-style parameter.
 
-    + (NSString *)favoriteDayTextWithWeekday:(NSString *)weekday;
-    $ @"Tuesday" >> @"My favorite day is Tuesday!"
+    - (NSArray *)weekdaysForInitialLetter:(NSString *)letter;
+    $ @"T" >> @[@"Tuesday", @"Thursday"]
 
 ### From
 
@@ -20,14 +20,14 @@ Parameter must be transformed before being used in the return value. "From" is u
     + (NSDate *)nextNoonDateFromWeekday:(NSString *)weekday;
     $ @"Tuesday" >> 2014-10-21 12:00:00
 
-### For
+### With
 
-Parameter as predicate.
+Parameter is ready.
 
-"For" is used in a method signature to express a predicate-style parameter.
+Parameter is used as-is in the return value. "With" is used in a method signature to express a parameter that is ready to be combined with other assumed/implicit information to yield the result.
 
-    - (NSArray *)weekdaysForInitialLetter:(NSString *)letter;
-    $ @"T" >> @[@"Tuesday", @"Thursday"]
+    + (NSString *)favoriteDayTextWithWeekday:(NSString *)weekday;
+    $ @"Tuesday" >> @"My favorite day is Tuesday!"
 
 ## Method Signature
 
