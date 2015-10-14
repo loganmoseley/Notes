@@ -13,18 +13,18 @@ Parameter as predicate.
 
 ### From
 
-Parameter is not ready.
+Parameters are necessary and sufficient.
 
-Parameter must be transformed before being used in the return value. "From" is used in a method signature to express a parameter that is transformed or coerced into another value, and may or may not then be combined with other assumed/implicit information.
+"From" is used in a method signature to express that the parameter or parameters are sufficient to describe the output. The parameters are likely transformed or coerced into other values or presentations, but may not be combined with other information. The parameters are the only changing factors in the method.
 
     + (NSDate *)nextNoonDateFromWeekday:(NSString *)weekday;
     $ @"Tuesday" >> 2014-10-21 12:00:00
 
 ### With
 
-Parameter is ready.
+Parameters are necessary, but not sufficient.
 
-Parameter is used as-is in the return value. "With" is used in a method signature to express a parameter that is ready to be combined with other assumed/implicit information to yield the result.
+"With" is used in a method signature to express that the parameter or parameters are necessary to the output, but insufficient to fully describe the output. That is, they will be combined with other assumed/implicit information to yield the result.
 
     + (NSString *)favoriteDayTextWithWeekday:(NSString *)weekday;
     $ @"Tuesday" >> @"My favorite day is Tuesday!"
