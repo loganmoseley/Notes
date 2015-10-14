@@ -28,11 +28,3 @@ Return NO from `shouldAutomaticallyForwardAppearanceMethods` before invoking bot
 ```
 
 # Vocabulary
-
-In method naming, "From:" means the method will return a new object derived exclusively from and essentially only describing this parameter, "With:" means the parameter represent a key piece–but not the only piece–of information, and "For:" means the method will return an object or value from existing information (aka, a predicate).
-
-Examples:
-
-* `NSStringFromCGRect()` returns a new NSString based on nothing and representing nothing except for the CGRect
-* `-uppercaseStringWithLocale:` returns a new NSString based on the locale passed, but also the existing NSString
-* `+stringEncodingForData:encodingOptions:::` returns an NSStringEncoding that matches the given parameters
