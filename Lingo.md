@@ -13,6 +13,10 @@ Parameter as predicate.
 $ @"T" >> @[@"Tuesday", @"Thursday"]
 ```
 
+```
+-[NSDictionary objectForKey:]
+```
+
 ### From
 
 Parameters are necessary and sufficient.
@@ -24,6 +28,10 @@ Parameters are necessary and sufficient.
 $ @"Tuesday" >> 2014-10-21 12:00:00
 ```
 
+```
+NSStringFromCGRect()
+```
+
 ### With
 
 Parameters are necessary, but not sufficient.
@@ -33,6 +41,10 @@ Parameters are necessary, but not sufficient.
 ```
 + (NSString *)favoriteDayTextWithWeekday:(NSString *)weekday;
 $ @"Tuesday" >> @"My favorite day is Tuesday!"
+```
+
+```
+-[NSString uppercaseStringWithLocale:]
 ```
 
 ## Method Signature
