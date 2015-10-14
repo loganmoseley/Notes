@@ -1,12 +1,12 @@
 # Objective-C Lingo
 
-## Method Parameter
+## Method Parameters
 
 ### For
 
-Parameter as predicate.
+Parameters as predicate.
 
-"For" is used in a method signature to express a predicate-style parameter.
+"For" is used in a method signature to express predicate-style parameters. The result is filtered, based on the parameters.
 
 ```
 - (ObjectType)objectForKey:(KeyType)key;
