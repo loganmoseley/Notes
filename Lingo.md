@@ -20,6 +20,8 @@ Fruit *greenFruit = [fruitsByColor objectForKey:@"green"];
 
 Parameters are necessary and sufficient.
 
+Stated another way, a "From" method must be [pure](https://en.wikipedia.org/wiki/Pure_function).
+
 "From" is used in a method signature to express that the parameter or parameters are sufficient to describe the output. The parameters are likely transformed or coerced into other values or presentations, but may not be combined with other information. The parameters are the only changing factors in the method.
 
 ```
